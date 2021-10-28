@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class ProdutosController extends Controller
 {
-    
+
     public function index()
     {
         $produtos = Produto::orderBy('id', 'desc')->get();
@@ -65,5 +65,4 @@ class ProdutosController extends Controller
 
         return redirect()->route('produtos');
     }
-
 }
